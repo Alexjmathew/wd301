@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "cd smarter-tasks && npm ci && npm run build"
   functions = "netlify/functions"
   publish = "smarter-tasks/dist"
 
@@ -9,9 +9,5 @@
     to = "/index.html"
     status = 200
 
-  ## (optional) Settings for Netlify Dev
-  ## https://github.com/netlify/cli/blob/main/docs/netlify-dev.md#project-detection
-  #[dev]
-  #  command = "yarn start" # Command to start your dev server
-  #  port = 3000 # Port that the dev server will be listening on
-  #  publish = "dist" # Folder with the static content for _redirect file
+[build.environment]
+  NODE_VERSION = "18"
