@@ -1,13 +1,15 @@
 const TaskCard = ({ title, completedAtDate, dueDate, assigneeName }) => {
   return (
-    <div className='TaskItem border border-black p-9 text-left m-2'>
-      <h2 className="text-xl font-bold">{title}</h2>
-      <p>
-        {completedAtDate 
-          ? `Completed on: ${completedAtDate}` 
-          : `Due on: ${dueDate}`}
-      </p>
-      <p>Assignee: {assigneeName}</p>
+    <div className='bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow'>
+      <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
+      <div className="text-sm text-gray-600 space-y-1">
+        <p>
+          {completedAtDate 
+            ? `Completed on: ${completedAtDate}` 
+            : `Due on: ${dueDate}`}
+        </p>
+        <p>Assignee: {assigneeName}</p>
+      </div>
     </div>
   );
 }
