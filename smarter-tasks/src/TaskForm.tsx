@@ -37,7 +37,8 @@ const TaskForm = (props: TaskFormProps) => {
   const addTask: React.FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
     console.log("Submitted the form with: ");
-    if (formState.title.length === 0 && formState.dueDate === null) {
+    // Fixed validation: prevent submission if title is empty OR dueDate is empty
+    if (formState.title.length === 0 || formState.dueDate.length === 0) {
       return;
     }
     props.addTask(formState);
