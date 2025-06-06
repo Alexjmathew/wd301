@@ -32,7 +32,7 @@ class TaskApp extends React.Component<TaskAppProp, TaskAppState> {
         </h1>
         <h1 className="text-lg mb-6 text-slate-600">
           <span className="font-bold">Project: </span>
-          Graduation Final Year Project (Revamp college website)
+          WD301
         </h1>
         <div className="mr-8 border-2 border-slate-800 rounded-lg px-4 py-4 w-full">
           <div className="border border-slate-200 rounded-lg p-4">
