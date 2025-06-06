@@ -2,15 +2,12 @@ import React from "react";
 import "./TaskCard.css";
 
 interface TaskProp {
-  title: string,
-  description: string,
-  dueDate: string
+  title: string;
+  description?: string;
+  dueDate: string;
 }
 
-class Task extends React.Component<TaskProp>{
-  constructor(props: TaskProp) {
-    super(props);
-  }
+class Task extends React.Component<TaskProp> {
   render() {
     return (
       <div className="TaskItem shadow-md border border-slate-100">
@@ -19,11 +16,11 @@ class Task extends React.Component<TaskProp>{
           <b>Due Date:</b> {this.props.dueDate}
         </p>
         <p className="text-sm text-slate-500">
-          <b>Description:</b> {this.props.description}
+          <b>Description:</b> {this.props.description || "No description provided"}
         </p>
       </div>
     );
   }
 }
 
-export default Task
+export default Task;
