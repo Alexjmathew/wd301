@@ -11,7 +11,7 @@ function App() {
     <div className="flex flex-col items-center">
       <div>
         <h1 className="font-bold text-4xl">Smarter Tasks</h1>
-        <p className='text-gray-700'><b>Project:</b> Graduation Final Year Project (Revamp College Website) </p>
+        <p className='text-gray-700'><b>Project:</b>  Project  </p>
       </div>
       <div className="flex justify-center mt-8">
         <div className="border p-4 rounded-xl">
